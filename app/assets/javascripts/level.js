@@ -4,13 +4,8 @@ app.directive('level', function(){
 		link: function($scope, element, attrs){
 			element.on('click', function(){
 				$scope.level = Number(attrs.difficulty);
-				console.log($scope.level);
-				$('#game').addClass('active');
+				$('game').addClass('active');
 			});
-
-			$.get('http://trainrush.dustcoin.com/api/line_leaders', function(data){
-				debugger
-			})
 		}
 	}
 });

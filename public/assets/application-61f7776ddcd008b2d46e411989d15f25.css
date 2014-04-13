@@ -1,0 +1,272 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* line 11, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/common.css.scss */
+.fade {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+/* line 14, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/common.css.scss */
+.fade.in {
+  opacity: 1;
+}
+
+/* line 43, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/common.css.scss */
+.red {
+  color: #e95855;
+}
+
+/* line 46, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/common.css.scss */
+.orange {
+  color: #f5a732;
+}
+
+/* line 49, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/common.css.scss */
+.grey {
+  color: #dad6d1;
+}
+
+/* line 52, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/common.css.scss */
+.lt-grey {
+  color: rgba(218, 214, 209, 0.33);
+}
+/* line 1, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game-setup.css.scss */
+.intro {
+  text-align: center;
+  padding: 1em;
+  background: black;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+/* line 9, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game-setup.css.scss */
+.signin.lead {
+  display: inline-block;
+  color: white;
+  background: blue;
+  padding: 10px;
+  width: 250px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* line 19, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game-setup.css.scss */
+.signin.lead small {
+  font-size: 19px;
+}
+
+/* line 23, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game-setup.css.scss */
+.setup {
+  text-align: center;
+}
+
+/* line 26, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game-setup.css.scss */
+.levels {
+  text-align: center;
+  padding: 2em;
+}
+/* line 29, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game-setup.css.scss */
+.levels .level {
+  font-size: 2em;
+  padding: 1em;
+  font-family: "Knewave", sans-serif;
+  border: solid 1px;
+  margin: 1em;
+  cursor: pointer;
+}
+/* line 36, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game-setup.css.scss */
+.levels .level:hover {
+  background: lightyellow;
+}
+
+/* line 41, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game-setup.css.scss */
+#game {
+  position: relative;
+}
+
+/* line 44, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game-setup.css.scss */
+game.active {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: black;
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* line 54, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game-setup.css.scss */
+.in {
+  opacity: 1;
+}
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* line 11, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/common.css.scss */
+.fade {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+/* line 14, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/common.css.scss */
+.fade.in {
+  opacity: 1;
+}
+
+/* line 43, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/common.css.scss */
+.red {
+  color: #e95855;
+}
+
+/* line 46, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/common.css.scss */
+.orange {
+  color: #f5a732;
+}
+
+/* line 49, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/common.css.scss */
+.grey {
+  color: #dad6d1;
+}
+
+/* line 52, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/common.css.scss */
+.lt-grey {
+  color: rgba(218, 214, 209, 0.33);
+}
+
+/* --- LOGO --- */
+/* line 7, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.logo {
+  font-family: "Knewave", sans-serif;
+  font-weight: bold;
+  color: red;
+  font-size: 3em;
+}
+
+/* line 14, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.lead {
+  font-size: 1.5em;
+  font-family: "Knewave", sans-serif;
+  color: orange;
+}
+
+/* --- GAME PLAY --- */
+/* entypo */
+/* line 22, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* line 26, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+div.game-wrapper {
+  text-align: center;
+  padding: 50px;
+}
+
+/* line 31, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.option {
+  padding: 40px;
+  margin: 1em;
+}
+
+/* line 36, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.word {
+  font-size: 48px;
+  color: orange;
+}
+
+/* line 40, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.option {
+  border: solid 1px;
+  font-size: 36px;
+  border-color: #696969;
+  position: relative;
+}
+
+/* line 46, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.option.clickable:hover {
+  cursor: pointer;
+  background: lightyellow;
+}
+
+/* ----- CORRECT ----- */
+/* line 54, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.correct.active, .correct.active:hover {
+  background: lightgreen;
+}
+
+/* line 57, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.incorrect.active, .incorrect.active:hover {
+  background: #ff7c7c;
+  border: solid 1px #ff7c7c;
+}
+
+/* line 62, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.option-icon {
+  position: absolute;
+  right: 25px;
+  color: white;
+}
+
+/* line 67, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.highlight {
+  border: solid 1px lightgreen;
+}
+
+/* line 70, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.highlight .option-icon {
+  color: lightgreen;
+}
+
+/* line 73, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.active {
+  color: white;
+}
+
+/* line 76, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.correct.active .option-icon {
+  color: white !important;
+}
+
+/* ----- GAME PLAY ----- */
+/* line 81, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+#game {
+  height: 700px;
+  overflow: hidden;
+}
+
+/* line 85, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/game.css.scss */
+.game-wrapper {
+  position: relative;
+  top: 0px;
+  -webkit-transition: top 0.35s ease-in-out;
+  -moz-transition: top 0.35s ease-in-out;
+  -ms-transition: top 0.35s ease-in-out;
+  -o-transition: top 0.35s ease-in-out;
+  transition: top 0.35s ease-in-out;
+}
+/* line 1, /Users/amyhua/Documents/my_projects/trainrush/app/assets/stylesheets/layout.css.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
