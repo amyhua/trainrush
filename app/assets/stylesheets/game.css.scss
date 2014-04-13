@@ -1,0 +1,89 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import 'common';
+
+
+/* --- LOGO --- */
+
+.logo {
+  font-family: "Knewave", sans-serif;
+  font-weight: bold;
+  color: red;
+  font-size: 3em;
+}
+
+.lead {
+  font-size: 1.5em;
+  font-family: "Knewave", sans-serif;
+  color: orange;
+}
+/* --- GAME PLAY --- */
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+div.game-wrapper {
+  text-align: center;
+  padding: 50px;
+}
+
+.option {
+  padding: 40px;
+  margin: 1em;
+}
+
+.word {
+  font-size: 48px;
+  color: orange;
+}
+.option {
+  border: solid 1px;
+  font-size: 36px;
+  border-color: #696969;
+  position: relative;
+}
+.option.clickable:hover {
+  cursor: pointer;
+  background: lightyellow;
+}
+
+
+/* ----- CORRECT ----- */
+
+.correct.active, .correct.active:hover {
+  background: lightgreen;
+}
+.incorrect.active, .incorrect.active:hover {
+  background: rgb(255, 124, 124);
+  border: solid 1px rgb(255, 124, 124);
+}
+
+.option-icon {
+    position: absolute;
+    right: 25px;
+    color: white;
+}
+.highlight {
+    border: solid 1px lightgreen;
+}
+.highlight .option-icon {
+    color: lightgreen;
+}
+.active {
+    color: white;
+}
+.correct.active .option-icon {
+    color: white !important;
+}
+
+/* ----- GAME PLAY ----- */
+#game {
+    height: 700px;
+    overflow: hidden;
+}
+.game-wrapper {
+    position: relative;
+    top: 0px;
+    @include transition(top, 0.35s);
+}

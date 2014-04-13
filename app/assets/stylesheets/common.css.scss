@@ -1,0 +1,58 @@
+$nav-height: 60px;
+
+@mixin transition($transition-property, $transition-time) {
+    -webkit-transition: $transition-property $transition-time ease-in-out;
+    -moz-transition: $transition-property $transition-time ease-in-out;
+    -ms-transition: $transition-property $transition-time ease-in-out;
+    -o-transition: $transition-property $transition-time ease-in-out;
+    transition: $transition-property $transition-time ease-in-out;
+}
+
+.fade {
+  @include transition(opacity, 0.5s);
+  opacity: 0;
+  &.in {
+    opacity: 1;
+  }
+}
+@mixin clearfix {
+  display: inline-block;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  * html & { height: 1px }
+}
+
+
+
+// ======= COLORS ======
+
+
+$orange: #f5a732;
+$lt-orange: lighten($orange, 20);
+$chocolate: #3A3E3D;
+$grey: #DAD6D1;
+$lt-grey: rgba(218, 214, 209, 0.33);
+$dk-grey: #999;
+$red: #E95855;
+
+.red {
+  color: $red;
+}
+.orange {
+  color: $orange;
+}
+.grey {
+  color: $grey;
+}
+.lt-grey {
+  color: $lt-grey;
+}
+
+// ====== LAYOUT AND SPACING ======
+
+$tags-spacing: 30px;

@@ -1,0 +1,11 @@
+<div ng-repeat="challenge in challenges" class="game-wrapper">
+	<gamecard>
+		<div class="word">
+			<span lang="zh-Hans">{{challenge.word}}</span>
+		</div>
+		<options class="options" ng-repeat="option in challenge.options">
+			<option name="option.option" correct="option.correct">
+			</option>
+		</options>
+	<gamecard>
+</div>
