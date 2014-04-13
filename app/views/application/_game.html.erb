@@ -1,3 +1,20 @@
-<div ng-controller="gameController">
+<div ng-controller="gameController" id="game">
+	<div class="header">
+		<div class="pull-left">
+			<img src="<%= current_user.image %>">
+			<%= current_user.first_name %> (<a href="/signout">signout</a>)
+		</div>
+		<div class="btn"><a href="/leaderboard">Arrived</a></div>
+	</div>
+	<div class="setup">
+	<h2><p class="lead">Choose a Level</p></h2>
+	<p>The higher the level, the more points you earn.</p>
+	<div class="levels">
+		<div class="level" difficulty="1">Basic</div>
+		<div class="level" difficulty="2">Intermediate</div>
+		<div class="level" difficulty="3">Advanced</div>
+	</div>
+	</div>
+
 	<game challenges="challenges"></game>
 </div>

@@ -4,3 +4,30 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
+.signin a, .btn {
+	text-decoration: none;
+	color: white;
+}
+div.btn {
+    float: left;
+    background: green;
+    padding: 10px;
+}
+.pull-left {
+	float: left;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 222;
+	width: 100%;
+}
+
+div.btn {
+  float: right;
+  background: green;
+  padding: 10px;
+  margin: 10px;
+}

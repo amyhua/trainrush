@@ -6,6 +6,13 @@ Trainrush::Application.routes.draw do
   root 'application#index'
   get 'game', to: 'application#game'
 
+  # Facebook Auth Routes
+  get 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/failure', to: 'sessions#failure'
+  get 'signout', to: 'sessions#destroy', as: 'logout'
+
+  get 'leaderboard', to: 'application#leaderboard'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

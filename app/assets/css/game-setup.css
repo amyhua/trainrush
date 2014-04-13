@@ -62,7 +62,6 @@ game.active {
   height: 100%;
   background: white;
   color: black;
-  opacity: 0;
   transition: opacity 0.35s ease-in-out;
 }
 
