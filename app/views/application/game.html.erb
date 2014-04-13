@@ -1,10 +1,12 @@
 <div ng-controller="gameController" id="game">
-	<p class="lead">Choose a Level</p>
+	<div class="setup">
+	<h2><p class="lead">Choose a Level</p></h2>
 	<p>The higher the level, the more points you earn.</p>
 	<div class="levels">
-		<div class="level">Basic</div>
-		<div class="level">Intermediate</div>
-		<div class="level">Advanced</div>
+		<div class="level" difficulty="1">Basic</div>
+		<div class="level" difficulty="2">Intermediate</div>
+		<div class="level" difficulty="3">Advanced</div>
+	</div>
 	</div>
 
 	<game challenges="challenges"></game>
